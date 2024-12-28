@@ -2,13 +2,22 @@
 
 ![aws cost (7)](https://github.com/codewithmuh/django-starter-kit/assets/51082957/71b37d29-ec83-4063-bbcd-7afe11bebc0a)
 
-Welcome to the Django Starter Kit, a comprehensive setup designed to streamline Django development using Docker, Celery, ElasticSearch, PostgreSQL, and Swagger.
+Welcome to the Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat  Using Github Actions CI/CD Pipeline.
 
 ## Overview
 
 This repository contains a pre-configured development environment for Django-based applications, enabling developers to set up a robust development environment with a single command.
 
-
+## Steps
+1. Clone the Repo on Your local system.
+2. Mofidy env if using in your project. otheriwse ignore.
+3. Run Command to test Project locally
+4. Create AWS Ec2 instance
+5. Install nginx, docker, docker compose on Ec2 instance
+6. run docker compose command to run the project
+7. create ngix file
+8. create CI/CD Github Actions pipeline for Auto Deployment
+9.  
 ## Getting Started
 
 To get started with the Django Starter Kit:
