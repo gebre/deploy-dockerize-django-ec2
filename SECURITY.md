@@ -26,9 +26,9 @@ Thank you for contributing to the security of the Django Starter Kit!
 
 ---
 
-### About Django Starter Kit
+### About Deploy Dockerize Django App on AWS EC2
 
 The Django Starter Kit offers a pre-configured development environment for Django-based applications, streamlining setup and enhancing productivity. Explore the power of Docker, PostgreSQL, ElasticSearch, Celery, and Swagger all in one place.
 
-Repository: [Django Starter Kit](https://github.com/codewithmuh/django-starter-kit)
+Repository: [Deploy Dockerized django app on aws ec2](https://github.com/codewithmuh/deploy-dockerize-django-ec2.git)
 License: MIT License
