@@ -1,4 +1,4 @@
-# Django Starter Kit: Simplifying Development with Docker Compose, Celery, ElasticSearch, PostgreSQL, and Swagger
+# Deploy Dockerized Django app on AWS Ec2 with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat
 
 ![aws cost (7)](https://github.com/codewithmuh/django-starter-kit/assets/51082957/71b37d29-ec83-4063-bbcd-7afe11bebc0a)
 
