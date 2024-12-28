@@ -1,6 +1,7 @@
 # Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat  Using Github Actions CI/CD Pipeline
 
-![aws cost (7)](https://github.com/codewithmuh/django-starter-kit/assets/51082957/71b37d29-ec83-4063-bbcd-7afe11bebc0a)
+![DEPLOY REACT ON S3 (9)](https://github.com/user-attachments/assets/7de04635-87d2-4615-8f91-fa529b45a998)
+
 
 Welcome to the Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat  Using Github Actions CI/CD Pipeline.
 
