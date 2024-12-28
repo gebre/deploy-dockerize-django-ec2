@@ -1,4 +1,4 @@
-# Deploy Dockerized Django app on AWS Ec2 with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat
+# Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat  Using Github Actions CI/CD Pipeline
 
 ![aws cost (7)](https://github.com/codewithmuh/django-starter-kit/assets/51082957/71b37d29-ec83-4063-bbcd-7afe11bebc0a)
 
@@ -8,15 +8,6 @@ Welcome to the Django Starter Kit, a comprehensive setup designed to streamline 
 
 This repository contains a pre-configured development environment for Django-based applications, enabling developers to set up a robust development environment with a single command.
 
-## Features
-
-- **Docker Integration**: Run your Django project and essential services in isolated containers for consistent development across different environments.
-- **Components Included**:
-  - Django: High-level Python web framework for rapid development.
-  - PostgreSQL: Open-source relational database management system.
-  - ElasticSearch: Powerful search engine for efficient data indexing and querying.
-  - Celery & Celery Beat: Asynchronous task queue with a scheduler for background tasks.
-- **Simplified Setup Process**: No need to individually install Python, PostgreSQL, ElasticSearch, etc. Run a single command to initialize the entire development environment.
 
 ## Getting Started
 

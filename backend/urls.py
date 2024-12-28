@@ -19,7 +19,7 @@ from django.urls import path
 
 from drf_yasg import openapi #new foe swagger
 from drf_yasg.views import get_schema_view as swagger_get_schema_view #new foe swagger
-
+from . import views  
 
 schema_view = swagger_get_schema_view(
     openapi.Info(
@@ -33,5 +33,6 @@ schema_view = swagger_get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.root_success, name='root-success'),
     path('swagger/schema/', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-schema"),
 ]
