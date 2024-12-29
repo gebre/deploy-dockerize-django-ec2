@@ -1,48 +1,29 @@
-# Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat  Using Github Actions CI/CD Pipeline
+# Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL Using Github Actions CI/CD Pipeline
+[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/muhammad-rashid-daha/)
+[![Youtube](https://img.shields.io/youtube/channel/subscribers/UC1HEefoqUWmztGZ_Laq28sw)](https://youtube.com/@codewithmuh)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@codewithmuh)
+[![GitHub](https://img.shields.io/github/stars/codewithmuh.svg?style=social)](https://github.com/codewithmuh)
+[![Terraform](https://img.shields.io/badge/Terraform-%E2%9C%A8-lightgrey)](https://www.terraform.io)
+[![AWS](https://img.shields.io/badge/AWS-%F0%9F%9B%A1-orange)](https://aws.amazon.com)
+
+
+### Youtube Video Url: 
+### Linkedin Article: 
+
 
 ![aws cost (7)](https://github.com/codewithmuh/django-starter-kit/assets/51082957/71b37d29-ec83-4063-bbcd-7afe11bebc0a)
 
-Welcome to the Deploy Dockerized Django app on AWS Ec2  with Docker Compose, Redis, Celery, ElasticSearch, PostgreSQL, Celery beat  Using Github Actions CI/CD Pipeline.
+This guide walks you through deploying a Dockerized Django backend on an AWS EC2 instance, setting up Nginx for reverse proxy, and automating deployment using GitHub Actions.
 
-## Overview
+## Table of Contents
 
-This repository contains a pre-configured development environment for Django-based applications, enabling developers to set up a robust development environment with a single command.
-
-## Steps
-1. Clone the Repo on Your local system.
-2. Mofidy env if using in your project. otheriwse ignore.
-3. Run Command to test Project locally
-4. Create AWS Ec2 instance and clone the project
-5. Install nginx, docker, docker compose on Ec2 instance
-6. run docker compose command to run the project
-7. create ngix file
-8. create CI/CD Github Actions pipeline for Auto Deployment
-9.  
-## Getting Started
-
-To get started with:
-
-1. **Clone the Repository**: `git clone https://github.com/codewithmuh/deploy-dockerize-django-ec2.git`
-2. **Configure Environment Variables**: Modify the `production.backend.env` available in build-process folder , we will use this file to customize settings according to your requirements.
-3. **Run Setup Command**:
-   ```bash
-   docker compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
-   ```
-
-4. AWS EC2 instace setup and cloone the prject
-
-5. Install nginx, docker, docker compose on Ec2 instance
-
-6. run docker compose command to run the project
-
-7. Setup Nginx
-
-8. CI/CD Pipeline setup
-
-9. Conclusion
-
-
-
+1. [Prepare your Project Locally for Production Ready](#prepare-your-project-locally-for-production-ready)
+2. [AWS EC2 Instance Creation](#aws-ec2-instance-creation)
+3. [Install Necessary Packages on EC2](#install-necessary-packages-on-ec2)
+4. [Clone your Project on EC2](#clone-your-project-on-ec2)
+5. [Nginx Setup](#nginx-setup)
+6. [CI/CD Pipeline Setup with GitHub Actions: Automate Deployment](#cicd-pipeline-setup-with-github-actions-automate-deployment)
+7. [Conclusion](#conclusion)
 
 
 ## License

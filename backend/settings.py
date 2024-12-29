@@ -71,7 +71,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_celery_beat',
     'celery',
     'django_elasticsearch_dsl',
     'rest_framework',
@@ -215,14 +214,8 @@ ELASTICSEARCH_DSL = {
 
 
 
-# Celery Beat
 
-CELERY_BEAT_SCHEDULE = {
-    "sample_task": {
-        "task": "backend.celery_conf.sample_task",
-        "schedule": crontab(minute="*/1"),
-    },
-}
+
 
 CACHES = {
     "alternate": {

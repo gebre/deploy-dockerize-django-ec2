@@ -91,25 +91,6 @@ services:
       - elastic
     restart: always  
 
-  celery-beat:
-    platform: 'linux/amd64'
-    image: backend-django:production
-    container_name: backend-django-celery-beat-production
-    build:
-      context: ../
-      dockerfile: ./build-process/docker-backend-django/Dockerfile
-      args:
-        APP_ENVIRONMENT: 'Production'
-    volumes:
-      - ../:/home/codewithmuh-backend
-    env_file:
-      - ./production.backend.env
-    depends_on:
-      - backend
-      - redis
-    networks:
-      - elastic
-    restart: always  
 
 volumes:
   backend-postgres-production:
