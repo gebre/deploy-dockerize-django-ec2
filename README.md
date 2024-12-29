@@ -11,7 +11,8 @@
 ### Linkedin Article: 
 
 
-![aws cost (7)](https://github.com/codewithmuh/django-starter-kit/assets/51082957/71b37d29-ec83-4063-bbcd-7afe11bebc0a)
+![DEPLOY REACT ON S3 (9)](https://github.com/user-attachments/assets/7de04635-87d2-4615-8f91-fa529b45a998)
+
 
 This guide walks you through deploying a Dockerized Django backend on an AWS EC2 instance, setting up Nginx for reverse proxy, and automating deployment using GitHub Actions.
 
