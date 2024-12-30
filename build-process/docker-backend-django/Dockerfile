@@ -28,16 +28,8 @@ EXPOSE 8080
 RUN mkdir -p /var/logs/codewithmuh
 
 
-# COPY ./build-process/docker-backend-django/scripts /home/docker/scripts
-
-# RUN sed -i 's/\r$//' /home/docker/scripts/boot.sh  && \
-#         chmod +x /home/docker/scripts/boot.sh
-
-
-
 COPY ./ /home/codewithmuh-backend
 
-# ENTRYPOINT /home/docker/scripts/boot.sh
 
 
 CMD ["gunicorn", "--workers", "4", "--timeout", "120", "--bind", "0.0.0.0:8080", "backend.wsgi:application"]
