@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = from django.utils.translation import ugettext_lazy as _
 
 ALLOWED_HOSTS = ["*"]
 
@@ -181,6 +181,12 @@ STATIC_ROOT = config('staticRootLocation')
 
 STATICFILES_DIRS = (
     config('staticLocation'),
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Default primary key field type
