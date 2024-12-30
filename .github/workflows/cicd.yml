@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/staging'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: self-hosted
 
     steps:
@@ -19,8 +19,8 @@ jobs:
       - name: Build and Deploy
         run: |
           cd /home/ubuntu/deploy-dockerize-django-ec2
-          git checkout staging
-          git pull origin staging
+          git checkout main
+          git pull origin main
           sudo docker-compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
           sudo docker exec backend-django-production python manage.py migrate
           sudo service nginx restart
