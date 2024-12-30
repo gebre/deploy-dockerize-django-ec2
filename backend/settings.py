@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = from django.utils.translation import ugettext_lazy as _
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
