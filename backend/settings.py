@@ -175,9 +175,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATIC_ROOT = config('staticRootLocation')
+
+STATICFILES_DIRS = (
+    config('staticLocation'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -193,6 +197,10 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+# BASE_URL = 'example.com'
+
+
 
 # https://medium.com/@ksarthak4ever/django-handling-periodic-tasks-with-celery-daaa2a146f14
 BROKER_URL = config('BROKER_URL')
