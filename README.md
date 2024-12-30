@@ -38,5 +38,4 @@ Special thanks to codewithmuh for creating this incredible Django Starter Kit an
 
 docker compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
 
-
-sudo docker compose --file "./build-process/docker-compose-django-backend.yml" up -d --build
+sudo docker-compose -f "./build-process/docker-compose-django-backend.yml" up -d --build

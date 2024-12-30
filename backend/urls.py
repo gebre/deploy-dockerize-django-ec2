@@ -20,6 +20,8 @@ from django.urls import path
 from drf_yasg import openapi #new foe swagger
 from drf_yasg.views import get_schema_view as swagger_get_schema_view #new foe swagger
 from . import views  
+from django.conf import settings
+from django.conf.urls.static import static
 
 schema_view = swagger_get_schema_view(
     openapi.Info(
@@ -35,4 +37,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.root_success, name='root-success'),
     path('swagger/schema/', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-schema"),
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG is True:
+    # urlpatterns.append(path('admin/', admin.site.urls))
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_URL)
+    
+

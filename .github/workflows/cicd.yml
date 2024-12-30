@@ -21,8 +21,9 @@ jobs:
           cd /home/ubuntu/deploy-dockerize-django-ec2
           git checkout staging
           git pull origin staging
-          sudo docker compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
+          sudo docker-compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
           sudo docker exec backend-django-production python manage.py migrate
+          sudo docker exec backend-django-production python manage.py collectstatic --noinput
           sudo service nginx restart
           sleep 10  # Add a sleep for 10 seconds after restarting nginx
           sudo docker image prune -a -f
