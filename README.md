@@ -7,7 +7,7 @@
 [![AWS](https://img.shields.io/badge/AWS-%F0%9F%9B%A1-orange)](https://aws.amazon.com)
 
 
-### Youtube Video Url: 
+### Youtube Video Url: https://youtu.be/BlVR6hzZ6T0
 ### Linkedin Article: 
 
 
@@ -27,6 +27,12 @@ This guide walks you through deploying a Dockerized Django backend on an AWS EC2
 7. [Conclusion](#conclusion)
 
 
+Commands:
+
+docker compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
+
+sudo docker-compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
+
 ## License
 This project is licensed under MIT License, granting you the freedom to use, modify, and distribute the code.
 
@@ -35,7 +41,3 @@ Special thanks to codewithmuh for creating this incredible Django Starter Kit an
 
 ## Support
 <a href="https://www.buymeacoffee.com/codewithmuh" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-docker compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
-
-sudo docker-compose -f "./build-process/docker-compose-django-backend.yml" up -d --build
