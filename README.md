@@ -8,7 +8,7 @@
 
 
 ### Youtube Video Url: https://youtu.be/BlVR6hzZ6T0
-### Linkedin Article: 
+### Linkedin Article: https://www.linkedin.com/pulse/automate-your-django-deployment-github-actions-docker-muhammad-rashid-9gfif
 
 
 ![DEPLOY REACT ON S3 (9)](https://github.com/user-attachments/assets/7de04635-87d2-4615-8f91-fa529b45a998)
