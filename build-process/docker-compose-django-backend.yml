@@ -10,7 +10,9 @@ services:
     networks:
       - elastic
     restart: always  
-      
+
+
+
   postgres:
     platform: 'linux/amd64'
     image: postgres:latest
@@ -26,6 +28,17 @@ services:
     networks:
       - elastic
     restart: always    
+
+  web:
+    build: .
+    command: gunicorn --bind 0.0.0.0:8000 your_project.wsgi:application
+    expose:
+      - 8000
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/dbname
+      - DJANGO_SETTINGS_MODULE=your_project.settings
+    depends_on:
+      -  postgres
 
   backend:
     platform: 'linux/amd64'
