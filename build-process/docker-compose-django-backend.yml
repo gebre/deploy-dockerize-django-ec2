@@ -11,21 +11,6 @@ services:
     networks:
       - elastic
     restart: always  
-
-  elasticsearch:
-    image: elasticsearch:7.14.0
-    container_name: elasticsearch
-    volumes:
-      - ./data/elastic:/var/lib/elasticsearch/data
-    environment:
-      - discovery.type=single-node
-      - ES_JAVA_OPTS=-Xms1g -Xmx1g  # Limit heap to 1 GB
-    ports:
-      - 9200:9200
-    networks:
-      - elastic
-    restart: always   # Ensures automatic restart
-
       
   postgres:
     platform: 'linux/amd64'
