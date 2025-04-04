@@ -27,6 +27,18 @@ services:
       - elastic
     restart: always    
 
+  web:
+    build:
+      context: ../
+      dockerfile: ./build-process/docker-backend-django/Dockerfile
+    command: gunicorn --bind 0.0.0.0:8000 deploy-dockerize-django-ec2.wsgi:application
+    expose:
+      - 8000
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/dbname
+      - DJANGO_SETTINGS_MODULE=deploy-dockerize-django-ec2.settings
+    depends_on:
+      - postgres
 
   backend:
     platform: 'linux/amd64'
