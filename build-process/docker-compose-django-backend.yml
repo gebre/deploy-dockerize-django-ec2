@@ -10,9 +10,7 @@ services:
     networks:
       - elastic
     restart: always  
-
-
-
+    
   postgres:
     platform: 'linux/amd64'
     image: postgres:latest
