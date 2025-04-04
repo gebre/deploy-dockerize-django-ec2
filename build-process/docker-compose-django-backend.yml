@@ -26,17 +26,7 @@ services:
     networks:
       - elastic
     restart: always    
-  web:
-    build: .
-    command: gunicorn --bind 0.0.0.0:8000 backend.wsgi:application
-    volumes:
-    expose:
-      - 8000
-    environment:
-      - DATABASE_URL=postgres://user:password@db:5432/dbname
-      - DJANGO_SETTINGS_MODULE=backend.settings
-    depends_on:
-      - db
+
 
   backend:
     platform: 'linux/amd64'
